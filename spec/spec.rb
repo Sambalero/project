@@ -16,6 +16,9 @@ describe RPOPage do
     page.header.should eq(page.expected_header)
   end
 
+  it "has the right by line" do
+    page.byline.should eq(page.expected_byline)
+  end
 end
 
 driver.close

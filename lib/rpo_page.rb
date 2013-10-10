@@ -1,7 +1,9 @@
 #project/lib/r_p_o_page.rb
+require 'common_features'
 
-class RPOPage
-  
+class RPOPage  
+include CommonFeatures
+
   def initialize(driver)
     @driver = driver
   end
@@ -27,4 +29,5 @@ class RPOPage
   def header
     header = @driver.find_elements(:tag_name => "h1")[0].text
   end
+
 end
